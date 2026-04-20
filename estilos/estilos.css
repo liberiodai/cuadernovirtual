@@ -1,0 +1,149 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b0217;
+  color: #e2e8f0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #6d28d9, #a855f7);
+}
+
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  background: #1a032d;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  z-index: 1000;
+}
+
+nav a {
+  color: #c084fc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  position: relative;
+}
+
+nav a:hover {
+  color: #e879f9;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #60a5fa;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Cards */
+main {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: #2e1065;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.01);
+   box-shadow: 0 15px 25px rgba(192, 132, 252, 0.3);  
+}
+/* Cuando está activo */
+.card.active .contenido {
+  max-height: 1000px;
+  margin-top: 10px;
+}
+
+.card.active .titulo::after {
+  transform: rotate(180deg);
+}
+
+/* Code */
+code {
+  display: block;
+  background: #14052a;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  color: #c084fc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+/* Botón título */
+.titulo {
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+/* Contenido oculto */
+.contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+section {
+  scroll-margin-top: 80px;
+} 
+img {
+  max-width: 100%;
+  width: 300px;        /* tamaño fijo bonito */
+  display: block;
+  margin: 15px auto;   /* centrado */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
+}
+.titulo::after {
+  content: "▼";
+  float: right;
+  transition: transform 0.3s;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #c084fc;
+}
+
+p {
+  line-height: 1.6;
+}

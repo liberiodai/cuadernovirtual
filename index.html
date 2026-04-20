@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuaderno Virtual</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    
+</head>
+
+<body>
+    </header>
+
+    <nav>
+        <a href="#Desarrollo">Desarrollo Web</a>
+        <a href="#Git">Git y Github</a>
+        <a href="#html">HTML</a>
+        <a href="#css">CSS</a>
+        <a href="#js">JavaScript</a>
+        <a href="#proyectos">Proyectos</a>
+    </nav>
+
+    <main>
+        <section class="card" id="Desarrollo">
+            <button class="titulo">Desarrollo Web</button>
+            <div class="contenido">
+                <p> Proceso mediante el cual se diseñan, construyen e implementan páginas y aplicaciones</p>
+
+                <h3>Aplicacion</h3>
+                <p>En sectores como la educación, el comercio, la comunicación y la gestión empresarial,
+                    permiten almacenar, procesar y presentar información, permiten almacenar, procesar y 
+                    presentar información.
+                </p>
+
+                <h3>Tecnologias</h3>
+                <p>Estas tecnologías permiten 
+                    estructurar el contenido, diseñar la apariencia visual y 
+                    generar interacción con el usuario.
+                </p>
+
+                <h3>¿Qué es una pagina web?</h3>
+                <p>
+                    Un documento digital, construido generalmente con 
+                    HTML y puede incluir elementos como texto, 
+                    imágenes, enlaces, videos y formularios
+                </p>
+
+                <h3>Tipos de páginas web</h3>
+                <p>
+                    Páginas estáticas: Contenido fijo, no cambia a menos que el desarrollador lo modifique.
+                    Páginas dinámicas: Contenido que puede cambiar en función de la interacción del usuario o
+                     de datos externos.
+                </p>
+
+                <h3>Arquitectura CLIENTE-SERVIDOR</h3>
+                <p>El cliente(navegador) envía solicitudes al servidor, que procesa las solicitudes y devuelve 
+                    la respuesta correspondiente.
+                </p>
+                <img src="img/cliente-servidor.png" alt="Arquitectura Cliente-Servidor">    
+
+                <h3>Protocolo HTTP</h3>
+                <p>HTTP (HyperText Transfer Protocol) es el protocolo que se utiliza para la comunicación entre 
+                    el cliente y el servidor en la web.
+                </p>
+                <p>Es el protocolo que se utiliza para la comunicación entre el cliente y el servidor en la web.</p>
+
+                <h3>Protocolo HTTPS</h3>
+                <p>HTTPS (HyperText Transfer Protocol Secure) es la versión segura del protocolo HTTP, que utiliza 
+                    cifrado para proteger la información transmitida.
+                </p>
+                <p> HTTPS es una versión segura de HTTP que utiliza mecanismos de cifrado para proteger la información </p>
+
+                <h3>Metodo GET</h3>
+                <p>El método GET se utiliza para solicitar datos del servidor. Es el método más común y se utiliza para 
+                    obtener información de una página web sin modificalos.
+                </p>
+                <h3>Metodo POST</h3>
+                <p>El método POST se utiliza para enviar datos al servidor. Es comúnmente utilizado para enviar formularios
+                     y crear nuevos recursos en el servidor.
+                </p><br>
+
+                <h3>Puertos en la web</h3>
+                <p>
+                    Los puertos son números que identifican servicios en una red. En la web, los puertos más comunes son:
+                </p>
+                <ul>
+                    <li>80: Puerto por defecto para HTTP</li>
+                    <li>443: Puerto por defecto para HTTPS</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Git y Github-->
+
+        <section class="card" id="Git">
+            <button class="titulo">Git y Github</button>
+            <div class="contenido">
+                <h3>¿Qué es Git?</h3>
+                <p>
+                    Git es un sistema de control de versiones distribuido que permite rastrear los cambios en los archivos
+                     y coordinar el trabajo en proyectos de desarrollo.
+                </p>
+
+                <h3>¿Qué es GitHub?</h3>
+                <p>
+                    GitHub es una plataforma de alojamiento de código que utiliza Git para el control de versiones. 
+                    Permite a los desarrolladores colaborar en proyectos, compartir código y gestionar versiones.   
+                </p>
+                <h3>Configuracion de Git</h3>
+                <p>
+                    Para configurar Git, se deben establecer el nombre de usuario y el correo electrónico:
+                </p>
+                <ul>
+                    <li><code>git config --global user.name "Tu Nombre"</code></li>
+                    <li><code>git config --global user.email "tu.email@ejemplo.com"</code></li>
+                </ul>
+
+                <h3>Comandos básicos de Git</h3>
+                <ul> 
+                    <li>git init: Inicializa un nuevo repositorio</li>
+                    <li>git add: Agrega archivos al área de preparación</li>
+                    <li>git commit: Guarda los cambios en el repositorio</li>
+                    <li>git push: Envía los cambios al repositorio remoto</li>
+                    <li>git pull: Obtiene los cambios del repositorio remoto</li>
+                </ul>
+
+                <h3>Tipos de control de versiones</h3>
+                <p>
+                    Existen dos tipos principales de control de versiones: centralizado y distribuido. 
+                    Git es un sistema de control de versiones distribuido.
+                </p>
+                <h4>SCV Centralizado</h4>
+                <p> 
+                    En un sistema de control de versiones centralizado, existe un servidor central que almacena el 
+                    código fuente y los desarrolladores realizan cambios directamente en ese servidor. Ejemplo: Subversion (SVN).
+                </p>
+                <img src="img/SCV - Centralizado.png" alt="Control de versiones centralizado">
+                <h4>SCV Distribuido</h4>
+                <p>
+                    En un sistema de control de versiones distribuido, cada desarrollador tiene una copia completa del 
+                    repositorio en su máquina local. Esto permite trabajar de manera independiente y luego sincronizar 
+                    los cambios con el repositorio remoto. Ejemplo: Git.     
+                </p>
+                <img src="img/SCV - Distribuido.png" alt="Control de versiones distribuido">
+
+                <h3>Por que Git</h3>
+                <p>
+                    Git es ampliamente utilizado debido a su eficiencia, flexibilidad y capacidad para manejar proyectos 
+                    grandes y complejos.
+                </p>
+                <p>Todos los repositorios de los desarrolladores están en su máquina local.</p>
+                <img src="img/Repositorio local.png" alt="Git">
+            </div>
+        </section>
+
+        <!--HTML-->
+
+        <section class="card" id="html">
+            <button class="titulo">HTML</button>
+            <div class="contenido">
+                <h3>¿Qué es?</h3>
+                <p>
+                    HTML (HyperText Markup Language) es el lenguaje que se utiliza para estructurar
+                    el contenido de una página web.
+                </p>
+
+                <h3>Características</h3>
+                <ul>
+                    <li>Usa etiquetas</li>
+                    <li>Define estructura</li>
+                    <li>No es un lenguaje de programación</li>
+                </ul>
+
+                <h3>Ejemplo</h3>
+                <ul>
+                    <li><code>&lt;h1&gt;Hola mundo&lt;/h1&gt;</code></li>
+                    <li><code>&lt;p&gt;Este es un párrafo&lt;/p&gt;</code></li>
+                </ul>
+
+                <p>
+                    HTML es la base de toda página web. Sin él, no existiría contenido visible.
+                </p>
+                <h3>Etiquetas básicas</h3>
+                <ul>
+                    <li><code>&lt;h1&gt; a &lt;h6&gt;</code>: Encabezados</li>
+                    <li><code>&lt;p&gt;</code>: Párrafo</li>
+                    <li><code>&lt;ul&gt;</code>: Lista no ordenada</li>
+                    <li><code>&lt;ol&gt;</code>: Lista ordenada</li>
+                    <li><code>&lt;li&gt;</code>: Elemento de lista</li>
+                </ul>
+
+                <h3>Elementos comunes</h3>
+                <ul>
+                    <li><code>&lt;div&gt;</code>: Contenedor genérico</li>
+                    <li><code>&lt;span&gt;</code>: Contenedor en línea</li>
+                    <li><code>&lt;a&gt;</code>: Enlace</li>
+                    <li><code>&lt;img&gt;</code>: Imagen</li>   
+                </ul>   
+
+                <h3>Semántica en HTML</h3>
+                <p>
+                    La semántica en HTML se refiere al uso de etiquetas que tienen un significado específico y describen el 
+                    propósito del contenido. Esto mejora la accesibilidad y el SEO de la página.
+                </p>
+
+                <h3>Ejemplo de HTML semántico</h3>
+                <ul>
+                    <li><code>&lt;header&gt;</code>: Encabezado de la página</li>
+                    <li><code>&lt;nav&gt;</code>: Navegación</li>
+                    <li><code>&lt;main&gt;</code>: Contenido principal</li>
+                    <li><code>&lt;section&gt;</code>: Sección del contenido</li>
+                    <li><code>&lt;footer&gt;</code>: Pie de página</li> 
+                    <li><code>&lt;article&gt;</code>: Artículo independiente</li>
+                    
+                </ul>
+
+                <h3>Contenedores</h3>
+                <p>
+                    Los contenedores en HTML son elementos que se utilizan para agrupar otros elementos y estructurar el contenido de la página.
+                </p>
+                <h4>Ejemplo de contenedores</h4>
+                <ul>
+                    <li><code>&lt;div&gt;</code>: Contenedor genérico</li>
+                    <li><code>&lt;span&gt;</code>: Contenedor en línea</li>
+                    <li><code>&lt;section&gt;</code>: Sección del contenido</li>
+                    <li><code>&lt;article&gt;</code>: Artículo independiente</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--CSS-->
+
+        <section class="card" id="css">
+            <button class="titulo">CSS</button>
+            <div class="contenido">
+                <h3>¿Qué es?</h3>
+                <p>
+                    CSS (Cascading Style Sheets) se utiliza para dar estilo y diseño a las páginas web.
+                </p>
+
+                <h3>Funciones</h3>
+                <ul>
+                    <li>Colores</li>
+                    <li>Diseño</li>
+                    <li>Animaciones</li>
+                </ul>
+
+                <h3>Ejemplo</h3>
+                <code>
+                    body {
+                        background: black;
+                        color: white;
+                    }
+                </code>
+
+                <p>
+                    CSS permite transformar una página simple en algo visualmente atractivo.
+                </p>
+                
+                <h3>Modelo de caja</h3>
+                <p>
+                    El modelo de caja en CSS describe cómo se representan los elementos en la página. Cada elemento se representa como una caja rectangular que consta de cuatro partes: contenido, relleno (padding), borde (border) y margen (margin).
+                </p>
+                <h4>Ejemplo de modelo de caja</h4>
+                <ul>
+                    <li><code>content</code>: El contenido del elemento</li>
+                    <li><code>padding</code>: Espacio entre el contenido y el borde</li>
+                    <li><code>border</code>: Línea que rodea el elemento</li>
+                    <li><code>margin</code>: Espacio entre el borde y otros elementos</li>
+                    <li><code>box-sizing</code>: Propiedad que controla cómo se calculan las dimensiones de la caja</li>
+                    <li><code>display</code>: Propiedad que controla cómo se muestra el elemento (block, inline, flex, grid)</li>
+                    <li><code>position</code>: Propiedad que controla la posición del elemento (static, relative, absolute, fixed)</li> 
+                    <li><code>float</code>: Propiedad que controla el flujo de los elementos (left, right, none)</li>
+                </ul>
+
+                <h3>Flexbox</h3>
+                <p>
+                    Flexbox es un modelo de diseño en CSS que permite distribuir el espacio entre los elementos de una 
+                    manera más eficiente y flexible. Facilita la creación de diseños responsivos y adaptativos.
+                </p>
+                <h4>Ejemplo de Flexbox</h4>
+                <ul>
+                    <li><code>display: flex;</code>: Activa el modelo Flexbox en un contenedor</li>
+                    <li><code>flex-direction</code>: Controla la dirección de los elementos (row, column)</li>
+                    <li><code>justify-content</code>: Controla la alineación horizontal de los elementos (flex-start, center, space-between)</li>
+                    <li><code>align-items</code>: Controla la alineación vertical de los elementos (flex-start, center, stretch)</li>
+                    <li><code>flex-wrap</code>: Controla si los elementos deben envolver a la siguiente línea (nowrap, wrap)</code></li>
+                </ul>
+
+                <h3>Tipos de posicionamiento</h3>
+                <p>
+                    En CSS, existen varios tipos de posicionamiento que controlan cómo se colocan los elementos en la página:
+                </p>
+                <ul>
+                    <li><code>static</code>: Posicionamiento por defecto</li>
+                    <li><code>relative</code>: Posicionamiento relativo al lugar donde se encuentra</li>
+                    <li><code>absolute</code>: Posicionamiento absoluto respecto al elemento padre más cercano</li>
+                    <li><code>fixed</code>: Posicionamiento fijo respecto a la ventana del navegador</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!--JavaScript-->
+        <section class="card" id="js">
+            <button class="titulo">JavaScript</button>
+            <div class="contenido">
+                <h3>¿Qué es?</h3>
+                <p>
+                    JavaScript es un lenguaje de programación que permite agregar interactividad a la web.
+                </p>
+
+                <h3>Usos</h3>
+                <ul>
+                    <li>Validar formularios</li>
+                    <li>Crear animaciones</li>
+                    <li>Manipular el contenido</li>
+                </ul>
+
+                <h3>Ejemplo</h3>
+                <code>
+                    console.log("Hola mundo");
+                </code>
+
+                <p>
+                    Gracias a JavaScript, las páginas web pueden reaccionar a las acciones del usuario.
+                </p>
+                <h3>Funciones</h3>
+                <p>
+                    Las funciones en JavaScript son bloques de código reutilizables que realizan una tarea específica.
+                </p>
+
+                <h4>Ejemplo de función</h4>
+                <code>
+                    function saludar(nombre) {
+                        return "Hola, " + nombre + "!";
+                        alert(saludar("Mundo"));
+                    }
+                </code> 
+
+                <h3>DOM (Document Object Model)</h3>
+                <p>
+                    El DOM es una representación estructurada de un documento HTML o XML. Permite a los desarrolladores acceder y manipular el contenido, la estructura y el estilo de una página web utilizando JavaScript.
+                </p>
+                <img src="img/DOM.png" alt="DOM">
+
+                <h4>Ejemplo de manipulación del DOM</h4>
+                <ul>
+                    <li><code>document.getElementById("miElemento")</code>: Selecciona un elemento por su ID</li>
+                    <li><code>document.querySelector(".miClase")</code>: Selecciona el primer elemento que coincide con el selector CSS</li>
+                    <li><code>document.querySelectorAll("p")</code>: Selecciona todos los elementos que coinciden con el selector CSS</li>
+                    <li><code>element.innerHTML</code>: Modifica el contenido HTML de un elemento</li>
+                    <li><code>element.style</code>: Modifica el estilo de un elemento</li>  
+                </ul>
+                <h3>Eventos on click</h3>
+                <p>
+                    Los eventos on click en JavaScript permiten ejecutar una función cuando un elemento es clickeado por el usuario.
+                </p>
+                <h4>Ejemplo de evento on click</h4> 
+                <ul>
+                    <li><code>element.addEventListener("click", function)</code>: Agrega un evento de clic a un elemento</li>
+                    <li><code>onclick</code>: Atributo HTML que define una función a ejecutar cuando se hace clic en el elemento</li>   
+                </ul>
+                            
+
+            </div>
+        </section>
+
+        <section class="card" id="proyectos">
+            <button class="titulo">Proyectos</button>
+            <div class="contenido">
+                <ul>
+                    <li>Formulario de registro</li>
+                    <li>Calculadora básica</li>
+                    <li>Landing page</li>
+                </ul>
+                <p>
+                    Estos proyectos permiten aplicar los conocimientos adquiridos en HTML, CSS y JavaScript.
+                </p>
+
+                <p>
+                    La práctica constante es clave para mejorar en el desarrollo web.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Un escrito de apoyo </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
